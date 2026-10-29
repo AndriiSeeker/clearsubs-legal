@@ -31,7 +31,7 @@
     <div class="callout">
       <ul>
         <li>Everything you enter in the app stays on your device. We have no account system and no server that receives it.</li>
-        <li>The app makes a few small network requests that contain no information about you or your subscriptions (see section 6).</li>
+        <li>The app makes a few small network requests for public files. They are the same for every user and contain no information about you or your subscriptions (see section 6).</li>
         <li>We have no analytics, no crash-reporting service and no advertising.</li>
         <li>We do not track you across other apps or websites, and we do not sell your data.</li>
         <li>Scanning a screenshot or a photo is done on your device. The image is not uploaded.</li>
@@ -125,22 +125,23 @@
           </tr>
           <tr>
             <td>Service logos</td>
-            <td>To show the logo of a service when it is added. Each logo is downloaded once and kept on your device.</td>
-            <td>The service&rsquo;s website domain, for example <code>netflix.com</code>, to our own logo host. Nothing else.</td>
+            <td>To show the logos of the services in the app&rsquo;s built-in catalog. The app downloads the whole set once, after it first opens, and keeps it on your device.</td>
+            <td>The website domains of the built-in catalog, for example <code>netflix.com</code>, to our own logo host. Every user&rsquo;s app requests the same list, so what you add or track never changes what is requested.</td>
             <td>Our logo host, served by Cloudflare Pages (<a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">policy</a>)</td>
           </tr>
           <tr>
             <td>Logo fallback</td>
-            <td>If our logo host has no image for a domain, including a domain you type for your own entry, the app asks a public icon service once.</td>
-            <td>The website domain only.</td>
+            <td>If our logo host has no image for a catalog domain, the app asks a public icon service once. Nothing you type is ever sent.</td>
+            <td>The catalog website domain only.</td>
             <td>DuckDuckGo (<a href="https://duckduckgo.com/privacy" rel="noopener">policy</a>)</td>
           </tr>
         </tbody>
       </table>
     </div>
     <p>
-      A domain whose logo could not be found is retried after about seven days. We do not use these
-      requests to identify you or to build a profile of you.
+      A logo that could not be downloaded is retried after about seven days. These requests are made
+      for everyone and do not depend on what you track. We do not use them to identify you or to
+      build a profile of you.
     </p>
 
     <h2>7. Why we use data, and on what legal basis</h2>
@@ -155,7 +156,7 @@
           </tr>
           <tr>
             <td>Show logos and convert currencies</td>
-            <td>Website domain; an IP address, which the providers in section 6 see</td>
+            <td>Catalog website domains, the same for every user; an IP address, which the providers in section 6 see</td>
             <td>Legitimate interest in a working product (Art. 6(1)(f))</td>
           </tr>
           <tr>
@@ -288,7 +289,7 @@
   </main>
 
   <footer>
-    <p><a href="index.html">Legal</a></p>
+    <p><a href="index.html">Legal</a> · <a href="support.html">Support</a></p>
     <p>
       Last updated: 2026-10-29 · © Andrii Svitelskyi. This document describes the app&rsquo;s actual data
       practices; it is not legal advice.
