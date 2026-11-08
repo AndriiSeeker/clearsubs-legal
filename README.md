@@ -37,4 +37,4 @@ styles.css              shared styles, no external dependencies
 ---
 
 Populated with the app's actual data practices. **Not legal advice**: have a lawyer review the
-document before release. Contact: [andriy.svitelskyi@gmail.com](mailto:andriy.svitelskyi@gmail.com)
+document before release. Contact: [svitelskyi.apps@gmail.com](mailto:svitelskyi.apps@gmail.com)
